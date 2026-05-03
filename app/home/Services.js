@@ -48,8 +48,16 @@ export default function Services() {
             </span>
           </h2>
 
-          <p className="mt-6 text-gray-600 text-lg md:text-xl">
+          <p className="mt-6 text-black text-lg md:text-xl">
             From building your product to scaling your business — we handle it all.
+          </p>
+
+          <p className="mt-6 text-gray-700 text-lg md:text-xl">
+            Here's what usually happens. A founder has a great idea. They hire a web developer. Then a separate person for marketing. Then someone else for SEO. Then another for automation. Four months later, nothing works together, the budget's gone, and the founder is exhausted from managing people instead of building a business.
+We've seen this story too many times.
+That's why Mady works differently. Strategy, development, design, growth, and automation — same team, same conversation, same goal. You talk to us once and everything moves. No handoffs. No blame games. No "that's not my department."
+Just your startup, actually going somewhere.
+
           </p>
         </div>
 
@@ -58,7 +66,8 @@ export default function Services() {
 
           <ServiceRow
             title="Build"
-            subtitle="Turn your idea into a real product"
+            subtitle="You've got the vision. We turn it into something people can open, click, buy, and come back to. Whether it's a website, a mobile app, or a full SaaS platform — we build it to work, not just to look good in a Figma file.
+"
             items={[
               { icon: Code, title: "Web Development" },
               { icon: Smartphone, title: "Mobile Apps" },
@@ -68,7 +77,7 @@ export default function Services() {
 
           <ServiceRow
             title="Grow"
-            subtitle="Get users and drive revenue"
+            subtitle="Building the product is step one. Getting the right people to find it, trust it, and buy from it — that's where most startups stall. We set up the growth systems that bring in real users, not just traffic numbers that look good on a report."
             items={[
               { icon: TrendingUp, title: "SEO" },
               { icon: BarChart3, title: "Performance Ads" },
@@ -78,8 +87,9 @@ export default function Services() {
           />
 
           <ServiceRow
-            title="Scale"
-            subtitle="Automate, optimize, and expand"
+            title="AUTOMATE"
+            subtitle="Honestly, the busiest founders we've met are often the most stuck. The ones actually growing? They stopped doing things manually a long time ago. We set up the systems that handle the repetitive stuff — follow-ups, lead tracking, reporting — so your team isn't buried in tasks that a workflow could've handled.
+"
             items={[
               { icon: Settings, title: "CRM Systems" },
               { icon: Bot, title: "AI Automation" },

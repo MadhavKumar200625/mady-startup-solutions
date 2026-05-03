@@ -25,7 +25,7 @@ const cases = [
 
 export default function CaseStudies() {
   return (
-    <section className="relative py-32 md:py-40 overflow-hidden bg-[#FDFCF9]">
+    <section className="relative pb-32 md:pb-40 overflow-hidden bg-[#FDFCF9]">
 
       {/* BACKGROUND ACCENTS */}
       <div className="absolute inset-0 -z-10">
@@ -57,7 +57,11 @@ export default function CaseStudies() {
             </p>
 
             <div className="mt-6 text-sm text-gray-500">
-              From MVPs to scalable systems — we think beyond just development.
+              Every project we take on starts with one question — what does this actually need to do? Not what looks impressive in a proposal. Not what's trending on Twitter. What does your specific business need to work, grow, and make money?
+
+            </div>
+            <div className="mt-6 text-sm text-gray-500">
+From that answer, we build. Sometimes it's a lean MVP to test an idea. Sometimes it's a full platform with automation, integrations, and a dashboard. Sometimes it's a website redesign that actually converts. We figure out what makes sense and we build that — not more, not less.
             </div>
           </div>
 

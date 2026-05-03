@@ -36,8 +36,8 @@ export default function Hero() {
             transition={{ duration: 0.8, delay: 0.1 }}
             className="mt-6 text-gray-600 text-lg md:text-xl leading-relaxed"
           >
-            Development, Marketing & AI — everything you need to launch and grow,
-            under one roof.
+           Most founders waste months bouncing between freelancers, agencies, and random contractors. We fix that. Development, marketing, and AI — one team, one goal, zero chaos.
+
           </motion.p>
 
           {/* CTA */}

@@ -5,29 +5,29 @@ import { motion } from "framer-motion";
 const steps = [
   {
     number: "01",
-    title: "Understand",
-    desc: "We deep dive into your idea, goals, and market.",
+    title: "Plan Smart",
+    desc: "Before anything gets designed or coded, we sit down and actually understand what you're building — who it's for, what problem it solves, what needs to happen first, and what can wait. No assumptions. No diving in blind. A clear plan saves more time than anything else.",
   },
   {
     number: "02",
-    title: "Build",
-    desc: "We design and develop your product with precision.",
+    title: "Build Fast",
+    desc: "We don't wait until everything's perfect to start building. We ship the core stuff first, get it in front of real people, and improve from there. Momentum matters more than perfection — especially early on.",
   },
   {
     number: "03",
-    title: "Launch",
-    desc: "We take your product live with strong positioning.",
+    title: "Launch Right",
+    desc: "Going live isn't just clicking publish. We test it properly, fix what breaks, make sure the performance is clean, and then launch with a plan. Not a prayer.",
   },
   {
     number: "04",
-    title: "Scale",
-    desc: "We optimize, automate, and grow your business.",
+    title: "Scale Strong",
+    desc: "Going live is where most teams relax. We don't. We look at what's working, drop what isn't, and keep pushing. There's always something to improve — we just make sure it actually gets done.",
   },
 ];
 
 export default function Process() {
   return (
-    <section className="relative py-28 md:py-36 overflow-hidden">
+    <section className="relative pb-14 md:pb-26 overflow-hidden">
 
       {/* UNIQUE BACKGROUND */}
       <div className="absolute inset-0 -z-10">
@@ -49,7 +49,12 @@ export default function Process() {
           </h2>
 
           <p className="mt-6 text-gray-600 text-lg md:text-xl">
-            A clear, structured process that keeps everything fast, transparent, and effective.
+            No mystery, no radio silence. Just a way of working that actually keeps moving.
+
+          </p>
+
+          <p className="mt-6 text-gray-600 text-lg md:text-xl">
+            We&apos;ve taken over enough broken projects to know exactly how things go wrong. Usually it&apos;s not the idea — it&apos;s the process. So ours is simple: you always know what&apos;s happening, and things keep moving.
           </p>
         </div>
 
