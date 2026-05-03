@@ -137,8 +137,8 @@ function FooterColumn({ title, items }) {
 /* SOCIAL ICON */
 function SocialIcon({ icon }) {
   return (
-    <div className="p-2 rounded-lg border border-gray-200 text-gray-600 hover:text-black hover:border-gray-300 hover:-translate-y-0.5 transition-all cursor-pointer">
+    <a href="https://www.linkedin.com/company/madysolutions/" className="p-2 rounded-lg border border-gray-200 text-gray-600 hover:text-black hover:border-gray-300 hover:-translate-y-0.5 transition-all cursor-pointer">
       {icon}
-    </div>
+    </a>
   );
 }
