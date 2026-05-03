@@ -2,7 +2,7 @@
 
 import { useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
-import { ChevronDown } from "lucide-react";
+import { ChevronDown, Link } from "lucide-react";
 
 export default function Header() {
   const [open, setOpen] = useState(false);
@@ -88,15 +88,15 @@ export default function Header() {
             </AnimatePresence>
           </div>
 
-          <NavLink text="Work" />
+          {/* <NavLink text="Work" /> */}
           <NavLink text="About" />
           <NavLink text="Contact" />
         </nav>
 
         {/* CTA (PREMIUM, NOT LOUD) */}
-        <button className="hidden md:inline-flex items-center gap-2 px-5 py-2.5 rounded-xl border border-gray-300 text-gray-800 font-medium hover:border-black hover:text-black transition-all duration-300">
+        <a href="/contact" className="hidden md:inline-flex items-center gap-2 px-5 py-2.5 rounded-xl border border-gray-300 text-gray-800 font-medium hover:border-black hover:text-black transition-all duration-300">
           Start Project
-        </button>
+        </a>
 
         {/* MOBILE */}
         <div className="md:hidden text-2xl">☰</div>

@@ -33,9 +33,9 @@ export default function Footer() {
             </p>
           </div>
 
-          <button className="px-6 py-3 rounded-xl border border-gray-300 text-gray-800 font-medium hover:border-black hover:text-black transition-all">
+          <a href="contact" className="px-6 py-3 rounded-xl border border-gray-300 text-gray-800 font-medium hover:border-black hover:text-black transition-all">
             Start a Project →
-          </button>
+          </a>
         </div>
       </div>
 

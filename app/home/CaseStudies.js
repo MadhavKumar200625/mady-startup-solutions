@@ -1,31 +1,67 @@
 "use client";
 
 import { motion } from "framer-motion";
-
 const cases = [
   {
-    tag: "Startup Build",
-    title: "Food Delivery Platform",
-    desc: "End-to-end system with real-time tracking, payments, and scalable backend.",
-    result: "Handles 10K+ daily users",
+    tag: "Startup MVPs",
+    title: "Startup MVPs",
+    desc: "Get to market fast with a product that's built to test, learn, and improve — without having to rebuild everything when it works.",
+    result: "",
   },
   {
-    tag: "E-commerce",
-    title: "D2C Brand Growth",
-    desc: "Custom storefront, conversion funnels, and automated CRM workflows.",
-    result: "Optimized for repeat sales",
+    tag: "SaaS Products",
+    title: "SaaS Products",
+    desc: "Full software platforms with user management, subscriptions, dashboards, and everything that makes a SaaS business actually run.",
+    result: "",
   },
   {
-    tag: "SaaS",
-    title: "Subscription Platform",
-    desc: "Dashboard, auth, billing, and scalable architecture for SaaS growth.",
-    result: "Launch-ready product system",
+    tag: "Business Websites",
+    title: "Business Websites",
+    desc: "Not templates. Not page builders slapped together. Proper websites that represent your brand and turn visitors into leads.",
+    result: "",
+  },
+  {
+    tag: "E-commerce Stores",
+    title: "E-commerce Stores",
+    desc: "Online stores built for conversion — fast checkout, smart product pages, and the backend tools you need to actually run the thing.",
+    result: "",
+  },
+  {
+    tag: "CRM Dashboards",
+    title: "CRM Dashboards",
+    desc: "Custom dashboards that show you what's actually happening in your business — leads, sales, performance — without the noise.",
+    result: "",
+  },
+  {
+    tag: "Landing Pages",
+    title: "Landing Pages",
+    desc: "Single pages built with one job: convert. Clear message, strong design, no distractions.",
+    result: "",
+  },
+
+  {
+    tag: "AI Workflows",
+    title: "AI Workflows",
+    desc: "Automation that uses AI to handle repetitive tasks, qualify leads, generate content, answer questions, and keep things moving without adding headcount.",
+    result: "",
+  },
+  {
+    tag: "Mobile Apps",
+    title: "Mobile Apps",
+    desc: "Android, iOS, or both. Apps that feel good to use and actually do what your users need them to do.",
+    result: "",
+  },
+  {
+    tag: "Custom Solutions",
+    title: "Custom Solutions",
+    desc: "Tailored systems built exactly for your business needs — no limitations, no templates, just solutions designed to fit your workflow and scale with you.",
+    result: "",
   },
 ];
 
 export default function CaseStudies() {
   return (
-    <section className="relative pb-32 md:pb-40 overflow-hidden bg-[#FDFCF9]">
+    <section className="relative pb-32 pt-20 md:pb-40 overflow-hidden bg-[#FDFCF9]">
 
       {/* BACKGROUND ACCENTS */}
       <div className="absolute inset-0 -z-10">

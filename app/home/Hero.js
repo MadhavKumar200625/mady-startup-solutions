@@ -47,13 +47,13 @@ export default function Hero() {
             transition={{ duration: 0.9, delay: 0.2 }}
             className="mt-10 flex flex-wrap items-center gap-4"
           >
-            <button className="px-7 py-3.5 rounded-xl bg-black text-white font-medium hover:scale-[1.04] transition-all">
+            <a href="/contact" className="px-7 py-3.5 rounded-xl bg-black text-white font-medium hover:scale-[1.04] transition-all">
               Start Your Startup
-            </button>
-
+            </a>
+{/* 
             <button className="px-7 py-3.5 rounded-xl border border-gray-300 text-gray-800 font-medium hover:border-black transition">
               See Our Work
-            </button>
+            </button> */}
           </motion.div>
         </div>
 

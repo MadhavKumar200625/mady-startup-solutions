@@ -63,7 +63,8 @@ export default function TechStack() {
             </p>
 
             <div className="mt-6 text-sm text-gray-500">
-              Clean code. Scalable systems. No shortcuts.
+              We don't chase trends. We use technology that's proven, fast, and built to handle growth without falling over. Every tool we use is chosen because it's the right fit — not because it's new, not because it looks good on a slide.
+
             </div>
           </div>
 
