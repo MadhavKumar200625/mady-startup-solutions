@@ -15,6 +15,9 @@ export default function ContactForm() {
   const [open, setOpen] = useState(false);
   const [search, setSearch] = useState("");
 
+  const [loading, setLoading] = useState(false);
+  const [success, setSuccess] = useState(false);
+
   const dropdownRef = useRef();
 
   // CLOSE ON OUTSIDE CLICK
@@ -31,6 +34,48 @@ export default function ContactForm() {
   const filtered = countries.filter((c) =>
     c.name.toLowerCase().includes(search.toLowerCase())
   );
+
+  // ✅ SUBMIT HANDLER
+  const handleSubmit = async () => {
+    if (!form.name || !form.email) {
+      alert("Please fill required fields");
+      return;
+    }
+
+    try {
+      setLoading(true);
+
+      const res = await fetch("/api/contact", {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify(form),
+      });
+
+      const data = await res.json();
+
+      if (data.success) {
+        setSuccess(true);
+
+        // reset form
+        setForm({
+          name: "",
+          email: "",
+          phone: "",
+          country: countries[0],
+          idea: "",
+        });
+      } else {
+        alert("Something went wrong");
+      }
+    } catch (err) {
+      console.error(err);
+      alert("Server error");
+    } finally {
+      setLoading(false);
+    }
+  };
 
   return (
     <section className="py-28 md:py-36 bg-[#FAFBFC]">
@@ -96,6 +141,7 @@ export default function ContactForm() {
                   type="text"
                   placeholder="Enter phone number"
                   className="flex-1 px-4 py-4 outline-none"
+                  value={form.phone}
                   onChange={(e) =>
                     setForm({ ...form, phone: e.target.value })
                   }
@@ -150,8 +196,16 @@ export default function ContactForm() {
               onChange={(v) => setForm({ ...form, idea: v })}
             />
 
-            <button className="w-full py-4 bg-black text-white rounded-xl font-medium text-lg hover:scale-[1.02] hover:shadow-lg transition-all">
-              Send Message
+            <button
+              onClick={handleSubmit}
+              disabled={loading}
+              className={`w-full py-4 rounded-xl font-medium text-lg transition-all ${
+                loading
+                  ? "bg-gray-400 cursor-not-allowed"
+                  : "bg-black text-white hover:scale-[1.02] hover:shadow-lg"
+              }`}
+            >
+              {loading ? "Sending..." : "Send Message"}
             </button>
 
           </div>
@@ -174,7 +228,7 @@ export default function ContactForm() {
 
             <div className="flex items-center gap-3">
               <span>📧</span>
-              <span>madysolutions26@gmail.com</span>
+              <span>official@madysolutions.in</span>
             </div>
 
             <div className="flex items-center gap-3">
@@ -196,6 +250,27 @@ export default function ContactForm() {
         </div>
 
       </div>
+
+      {/* ✅ SUCCESS POPUP */}
+      {success && (
+        <div className="fixed inset-0 bg-black/40 flex items-center justify-center z-50">
+          <div className="bg-white rounded-2xl p-8 max-w-md w-full text-center shadow-2xl animate-scaleIn">
+            <h3 className="text-2xl font-semibold mb-4">
+              🚀 Message Sent!
+            </h3>
+            <p className="text-gray-600 mb-6">
+              Thank you for reaching out. We’ll get back to you within 24 hours.
+            </p>
+            <button
+              onClick={() => setSuccess(false)}
+              className="px-6 py-3 bg-black text-white rounded-lg hover:scale-105 transition"
+            >
+              Close
+            </button>
+          </div>
+        </div>
+      )}
+
     </section>
   );
 }
