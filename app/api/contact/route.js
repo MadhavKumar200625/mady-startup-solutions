@@ -48,7 +48,7 @@ export async function POST(req) {
     // =========================
     await transporter.sendMail({
       from: `"Website Lead" <${process.env.EMAIL_USER}>`,
-      to: "madysoultions26@gmail.com",
+      to: "madysolutions26@gmail.com",
       subject: "🚀 New Startup Inquiry",
       html: `
         <div style="font-family: Inter, sans-serif; padding:20px;">
